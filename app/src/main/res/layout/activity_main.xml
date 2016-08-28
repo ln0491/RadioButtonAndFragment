@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="liu.radiobuttonandfragment.MainActivity">
+
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+    </FrameLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/nav_footer_white"
+        android:gravity="center"
+
+        android:orientation="horizontal">
+
+
+        <RadioGroup
+            android:id="@+id/rgTools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <RadioButton
+                android:id="@+id/rbHome"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:drawableTop="@drawable/selector_main_btn_home"
+                android:gravity="center"
+                android:paddingLeft="0dp"
+                android:text="首页"/>
+
+            <RadioButton
+                android:id="@+id/rbShop"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="false"
+                android:drawableTop="@drawable/selector_main_btn_shopcart"
+                android:gravity="center"
+                android:text="购物车"/>
+
+            <RadioButton
+                android:checked="false"
+                android:id="@+id/rbMessage"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/selector_main_btn_message"
+                android:gravity="center"
+                android:text="消息"/>
+
+            <RadioButton
+                android:checked="false"
+                android:id="@+id/rbMine"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/selector_main_btn_mine"
+                android:gravity="center"
+                android:text="我的"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+</LinearLayout>
